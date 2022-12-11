@@ -8,7 +8,7 @@ source nom_env_virtuel/bin/activate
 pip<version> install -r requirements.txt
 
 
-# Execution du script
+# Exécution du script
 
 # Image
 Concernant le téléchargement des images Pensez a créer un repertoire <Images> dans le répertoire d'exécution du script 
