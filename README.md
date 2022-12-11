@@ -14,7 +14,7 @@ pip<version> install -r requirements.txt
 Concernant le téléchargement des images Pensez a créer un repertoire <Images> dans le répertoire d'exécution du script 
 pour le bon fonctionnement du programme
 
-Ou pour une exécution sans repertoire au niveau de cette ligne [with open("Images/"+filename,'wb') as f ] du script des images
+Où pour une exécution sans repertoire au niveau de cette ligne [with open("Images/"+filename,'wb') as f ] du script des images
 
 Enlevez le répertoire Images et sauvegardez le fichier comme ceci  [with open(filename,'wb') as f]
 ainsi les images seront téléchargées dans le répertoire courant
