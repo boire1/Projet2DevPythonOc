@@ -33,7 +33,7 @@ for link in links:
     
     title = book_soup.find(class_="col-sm-6 product_main").h1.text.strip()
 
-    price = book_soup.find(class_="col-sm-6 product_main").p.text.strip()[1:].replace('£','€')
+    price = book_soup.find(class_="col-sm-6 product_main").p.text.strip()[1:]
     
     stock = book_soup.find(class_="instock availability").text.strip()
     
@@ -57,15 +57,15 @@ for link in links:
     
     tab_bk_UPC=(tableau_book.text[6:20] )
    
-    bk_price_excl_tva=(tableau_book.text[62:68]).replace('£','€')
-    bk_price_incl_tva=(tableau_book.text[89:95]).replace('£','€')
+    bk_price_excl_tva=(tableau_book.text[62:68])
+    bk_price_incl_tva=(tableau_book.text[89:95])
 
     tabl_book_avality=(tableau_book.text[132:150])
     
     tableau_reviews=(tableau_book_clean[167:180]).strip()
     title = book_soup.find(class_="col-sm-6 product_main").h1.text.strip()
     
-    with open('allBook.csv', 'w',encoding='utf8', newline='' ) as ff_csv:
+    with open('allBookeric.csv', 'w',encoding='utf8', newline='' ) as ff_csv:
         thewriter = csv.writer(ff_csv, delimiter=',')
         header=['Title ','Num_Upc ','Category ','Price', 'Reviews', 'Available', '(Price exl tva)',
                 '(Price inc tva)','Image Link','Rating ','Link of the book', 'Description']
