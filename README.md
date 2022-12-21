@@ -9,8 +9,29 @@ pip<version> install -r requirements.txt
 
 
 # Exécution du script
+Pour executer les differents scripts veuillez créer puis activer votre environnement de travail ainsi que les requirements comme indiqué ci dessous 
+Placez vous dans le repertoire ou se trouve le fichier puis suivez les consignes suivantes:
+  
+Execution du script pour un livre tapez en ligne de commande: 
+  python one_Book.py    
+  
+Execution du script de l'ensemble des livres tapez en ligne de commande :
+python allBooksOK.py  
+  
+Execution du script pour les catégories tapez en ligne de commande :
+python testcategory.py
+  
+ Execution du script pour extraire les images tapez en ligne de commande :
+ python images_book.py
+  
+  
 
+  
+  
 # Image
+  Execution du script pour extraire les images tapez en ligne de commande :
+  python images_book.py
+  
 Concernant le téléchargement des images Pensez a créer un repertoire <Images> dans le répertoire d'exécution du script 
 pour le bon fonctionnement du programme
 
